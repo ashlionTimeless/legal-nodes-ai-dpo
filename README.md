@@ -1,80 +1,90 @@
-🤖 AI DPO – Your AI-Powered Privacy Officer
-AI DPO is an autonomous privacy agent that automates vendor Data Processing Agreement (DPA) reviews, flags compliance risks, benchmarks contracts against your internal playbooks, and delivers expert-level reports—in seconds—all inside tools you already use, like Slack.
+# 🤖 AI DPO – Your AI-Powered Privacy Officer
 
-🔍 The Problem
-Companies are drowning in regulatory requirements while their privacy teams are critically understaffed.
-Tools like Vanta and Drata offer checklists and audit trails—but fall short when it comes to repetitive privacy tasks, especially DPA reviews.
+**AI DPO** is an autonomous privacy agent that automates vendor **Data Processing Agreement (DPA)** reviews, flags compliance risks, benchmarks contracts against your internal playbooks, and delivers expert-level reports—in seconds—all inside tools you already use, like **Slack**.
 
-These reviews often take 1–2 hours per document and scale into hundreds of hours per month.
+---
 
-💡 The Solution: AI DPO
+## 🔍 The Problem
+
+Companies are drowning in regulatory requirements while their privacy teams are critically understaffed.  
+Tools like **Vanta** and **Drata** offer checklists and audit trails—but fall short when it comes to **repetitive privacy tasks**, especially **DPA reviews**.
+
+These reviews often take **1–2 hours per document** and scale into **hundreds of hours per month**.
+
+---
+
+## 💡 The Solution: AI DPO
+
 AI DPO is a self-operating AI privacy agent that:
 
-📋 Automates vendor DPA reviews
+- 📋 Automates vendor **DPA reviews**
+- 🛡️ Benchmarks agreements against **internal playbooks** and **GDPR Article 28**
+- 🚩 Flags **compliance risks** and **negotiation points**
+- 📊 Generates **structured, expert-level reports**
+- 💬 Works seamlessly via **Slack integration**
 
-🛡️ Benchmarks agreements against internal playbooks and GDPR Article 28
+---
 
-🚩 Flags compliance risks and negotiation points
+## 🧠 How It Works
 
-📊 Generates structured, expert-level reports
+1. **Upload** a vendor’s DPA via Slack.
+2. **Attach** your internal policy or playbook.
+3. AI DPO:
+   - Extracts key clauses
+   - Benchmarks clauses against GDPR and custom rules
+   - Flags risks and deviations
+   - Delivers a structured summary and risk report—**instantly**
 
-💬 Works seamlessly via Slack integration
+---
 
-🧠 How It Works
-Upload a vendor’s DPA via Slack.
+## ⚙️ Tech Stack and Architecture
 
-Attach your internal policy or playbook.
-
-AI DPO:
-
-Extracts key clauses
-
-Benchmarks clauses against GDPR and custom rules
-
-Flags risks and deviations
-
-Delivers a structured summary and risk report—instantly
-
-⚙️ Tech Stack and Architecture
 AI DPO is built on top of a modular privacy-focused agent framework.
 
-🧱 Core Agent Logic
-Built using LegalNodesRAISE:
+### 🧱 Core Agent Logic  
+Built using [`LegalNodesRAISE`](https://github.com/alexanch/LegalNodesRAISE):  
+- Provides agent orchestration and workflow logic  
+- Handles incoming Slack requests and manages review sessions
 
-Provides agent orchestration and workflow logic
+### 🧠 Privacy Expert Knowledge Base  
+Knowledge base and rule engine for privacy benchmarking:  
+[`ln-dpo-node-app`](https://github.com/ashlionTimeless/ln-dpo-node-app)  
+- Stores compliance rules and GDPR Article 28 checks in MongoDB  
+- Provides rule-matching logic for contract benchmarking
 
-Handles incoming Slack requests and manages review sessions
+### 📄 Clause Extraction  
+Uses **Microsoft GraphRAG** for:
+- Semantic clause parsing from uploaded DPA documents  
+- Extracting structured insights for review
 
-🧠 Privacy Expert Knowledge Base
-Knowledge base and rule engine for privacy benchmarking:
-ln-dpo-node-app
+### 💬 Slack Integration  
+AI DPO is deployable as a **Slack application**, enabling:
+- Natural language queries  
+- Document uploads  
+- Inline responses and summary reports
 
-Stores compliance rules and GDPR Article 28 checks in MongoDB
+---
 
-Provides rule-matching logic for contract benchmarking
+## 🚀 Getting Started
 
-📄 Clause Extraction
-Uses Microsoft GraphRAG for:
+> Coming soon: setup instructions, deployment guide, and how to integrate your internal playbook.
 
-Semantic clause parsing from uploaded DPA documents
+---
 
-Extracting structured insights for review
+## 🛡️ Use Cases
 
-💬 Slack Integration
-AI DPO is deployable as a Slack application, enabling:
+- Internal privacy teams reviewing third-party vendor agreements  
+- LegalOps automation for startups and scaleups  
+- Compliance and risk benchmarking for GDPR Article 28
 
-Natural language queries
+---
 
-Document uploads
+## 📬 Contact / Contribute
 
-Inline responses and summary reports
+We welcome contributions and feedback!
 
-🚀 Getting Started
-Coming soon: setup instructions, deployment guide, and how to integrate your internal playbook.
+- Open an issue or pull request  
+- Email: [your-email@example.com]  
+- Slack: [Your Slack handle / channel link]
 
-🛡️ Use Cases
-Internal privacy teams reviewing third-party vendor agreements
-
-LegalOps automation for startups and scaleups
-
-Compliance and risk benchmarking for GDPR Article 28
+---
